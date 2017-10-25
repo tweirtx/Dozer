@@ -199,6 +199,7 @@ class Moderation(Cog):
 	`{prefix}prune 10` - Delete the last 10 messages in the current channel.
 	"""
 
+
 class Guildmodlog(db.DatabaseObject):
 	__tablename__ = 'modlogconfig'
 	id = db.Column(db.Integer, primary_key=True)
