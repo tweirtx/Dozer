@@ -639,6 +639,7 @@ class Levels(Cog):
             await ctx.send(embed=embed)
 
     @command(aliases=["rnak", "level"])
+    @bot_has_permissions(embed_links=True)
     @guild_only()
     @discord.ext.commands.cooldown(rate=1, per=5, type=discord.ext.commands.BucketType.user)
     async def rank(self, ctx: DozerContext, *, member: discord.Member = None):
